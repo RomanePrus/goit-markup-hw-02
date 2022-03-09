@@ -8,75 +8,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="page">
+  <body>
     <!--Шапка сторінки-->
     <header class="header">
-      <nav>
-        <a href="index.html" class="logo">
-          Web <span class="logo-style">Studio</span>
+      <nav class="navigation">
+        <a href="index.html" class="header-logo">
+          Web<span class="logo-style">Studio</span>
         </a>
-        <ul class="navigation">
-          <li><a href="/index.html" class="link">Студия</a></li>
-          <li><a href="/portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-        <ul class="contacts">
+        <ul class="list">
+          <li><a href="index.html" class="navigation-link">Студия</a></li>
           <li>
-            <a href="mailto:info@devstudio.com" class="contacts"
-              >info@devstudio.com</a
-            >
-            <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+            <a href="portfolio.html" class="navigation-link">Портфолио</a>
           </li>
+          <li><a href="" class="navigation-link">Контакты</a></li>
         </ul>
       </nav>
+      <ul class="list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="contacts-link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="contacts-link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
     </header>
     <!-- майн -->
-    <main>
+    <main class="main-blok">
       <!--Блок герой-->
-      <section class="mine">
-        <h1 class="title">
+      <section class="section">
+        <h1 class="section-title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <button type="button" class="section-button">Заказать услугу</button>
       </section>
       <!--Блок Особенности -->
       <section class="benefits">
         <h2>Особенности</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <h3 class="title">Внимание к деталям</h3>
-            <p class="text">
+            <h3 class="benefits-title">Внимание к деталям</h3>
+            <p class="benefits-text">
               Идейные соображения, а также начало пов седневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3 class="title">Пунктуальность</h3>
-            <p class="text">
+            <h3 class="benefits-title">Пунктуальность</h3>
+            <p class="benefits-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3 class="title">Планирование</h3>
-            <p class="text">
+            <h3 class="benefits-title">Планирование</h3>
+            <p class="benefits-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3 class="title">Современные технологии</h3>
-            <p class="text">
+            <h3 class="benefits-title">Современные технологии</h3>
+            <p class="benefits-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -85,8 +91,8 @@
       </section>
       <!--Блок Чем мы занимаемся-->
       <section class="activity">
-        <h2 class="title">Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="activity-title">Чем мы занимаемся</h2>
+        <ul class="list">
           <li class="img">
             <img
               src="images/box1.jpg"
@@ -116,7 +122,7 @@
       <!--Блок Наша команда-->
       <section class="team">
         <h2 class="team-title">Наша команда</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="images/img.jpg"
@@ -124,8 +130,8 @@
               width="270"
               height="260"
             />
-            <h2 class="name">Игорь Демьяненко</h2>
-            <p>Product Designer</p>
+            <h3 class="team-name">Игорь Демьяненко</h3>
+            <p class="team-text">Product Designer</p>
           </li>
           <li>
             <img
@@ -134,8 +140,8 @@
               width="270"
               height="260"
             />
-            <h2 class="name">Игорь Демьяненко</h2>
-            <p>Product Designer</p>
+            <h3 class="team-name">Игорь Демьяненко</h3>
+            <p class="team-text">Product Designer</p>
           </li>
           <li>
             <img
@@ -144,8 +150,8 @@
               width="270"
               height="260"
             />
-            <h3 class="name">Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <h3 class="team-name">Игорь Демьяненко</h3>
+            <p class="team-text">Product Designer</p>
           </li>
           <li>
             <img
@@ -154,28 +160,33 @@
               width="270"
               height="260"
             />
-            <h2 class="name">Игорь Демьяненко</h2>
-            <p>Product Designer</p>
+            <h3 class="team-name">Игорь Демьяненко</h3>
+            <p class="team-text">Product Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!--Футер-->
     <footer class="footer">
-      Web<span class="logo">Studio</span>
+      <a href="index.html" class="footer-logo">
+        Web<span class="logo-actent">Studio</span>
+      </a>
       <address>
-        <ul class="address">
+        <ul class="list">
           <li>
-            <a href="https://goo.gl/maps/vd8JTUUMNeQ3kda19" class="link1"
-              >г. Киев, пр-т Леси Украинки, 26</a
+            <a href="https://goo.gl/maps/vd8JTUUMNeQ3kda19" class="address-map">
+              г. Киев, пр-т Леси Украинки, 26</a
             >
-            <br />
           </li>
           <li>
-            <a href="mailto:info@devstudio.com" class="link"
+            <a href="mailto:info@devstudio.com" class="address-link"
               >info@devstudio.com</a
-            ><br />
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="address-link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
