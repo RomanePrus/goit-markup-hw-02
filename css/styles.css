@@ -135,21 +135,24 @@ body {
 }
 .address-map {
   color: var(--secondary-text-color);
-  text-decoration: none;
   font-family: Roboto, sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .address-link {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto, sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 /* PORTFOLIO */
@@ -165,7 +168,6 @@ body {
   letter-spacing: 0.03em;
   border-radius: 4px;
   border-color: #f5f4fa;
-  padding: 6px 22px;
   height: 38px;
 }
 .filters-button:hover,
