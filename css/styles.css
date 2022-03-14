@@ -17,7 +17,6 @@
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -65,7 +64,8 @@ body {
 
 /* Главный блок */
 .section-title {
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
+  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -73,13 +73,19 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.section-button {
-  font-family: Roboto, sans-serif;
-  width: 200px;
-  height: 50px;
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   border-radius: 4px;
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 /* Особенности */
@@ -87,7 +93,7 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -98,7 +104,7 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -113,7 +119,7 @@ body {
 }
 .team-text {
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
@@ -137,7 +143,6 @@ body {
   color: var(--secondary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -148,7 +153,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -160,15 +164,15 @@ body {
 .filters-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
-  font-family: Roboto sans-serif;
+  border: transparent;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  border-color: #f5f4fa;
-  height: 38px;
+  cursor: pointer;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -177,15 +181,12 @@ body {
 }
 .project-title {
   color: var(--title-text-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-text {
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
