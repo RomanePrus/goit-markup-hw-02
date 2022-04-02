@@ -22,8 +22,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* lsit & link style */
+.list {
+  list-style: none;
+}
 /* Шапка сторінки */
-.header-logo {
+
+/* Logo */
+.logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -31,30 +37,34 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo-style {
+.logo-dark {
   color: black;
 }
-.navigation {
-  font-family: Roboto, sans-serif;
+.logo-light {
+  color: var(--secondary-text-color);
+}
+/* Навигацыя */
+.link {
+  color: var(--title-text-color);
   font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-
-.navigation-link {
-  color: var(--title-text-color);
   text-decoration: none;
 }
-.navigation-link:hover,
-.navigation-link:focus {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
-.list {
-  list-style: none;
-}
+/* контакты*/
 .contacts-link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 .contacts-link:hover,
@@ -62,34 +72,36 @@ body {
   color: var(--accent-color);
 }
 
-/* Главный блок */
-.section-title {
-  color: var(--secondary-text-color);
+/* Блок герой */
+.hero {
   background-color: #2f303a;
+}
+.hero-title {
+  color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button {
+  color: var(--secondary-text-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  border-radius: 4px;
-  color: #ffffff;
-  background-color: var(--accent-color);
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
 }
 
 /* Особенности */
-.benefits-title {
+.features-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -99,8 +111,7 @@ body {
 }
 
 /* Чем мы занимаемся */
-.activity-title,
-.team-title {
+.section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -110,69 +121,56 @@ body {
 }
 
 /* Наша команда */
-.team-name {
+.team-title {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-.team-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-
-/* Подвал */
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+/* Футер */
 .footer {
-  color: #212121;
   background-color: #2f303a;
 }
-.footer-logo {
-  color: var(--accent-color);
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.logo-actent {
+.address {
   color: var(--secondary-text-color);
-}
-.address-map {
-  color: var(--secondary-text-color);
-  font-family: Roboto, sans-serif;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   text-decoration: none;
 }
-
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
 .address-link {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto, sans-serif;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   text-decoration: none;
 }
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
 
-/* PORTFOLIO */
-
+/* -----------------------------------------------ПОРТФОЛИО-------------------------------------------------------------------- */
 .filters-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
-  border: transparent;
-  font-family: Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  border-radius: 4px;
   cursor: pointer;
+  border-radius: 4px;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -187,8 +185,9 @@ body {
   letter-spacing: 0.06em;
 }
 .project-text {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
